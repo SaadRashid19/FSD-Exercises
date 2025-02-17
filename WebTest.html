@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#activities">Extra-Curricular</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1 class="big-text">Saad Rashid</h1>
+	    <p class="about-text fade-in">Third Year Electrical & Computer Engineering Student at MIT WPU, Pune.</p>
+            <img src="PF1.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+    </section>
+    
+    <section id="education" class="education">
+        <h2 class="slide-in-left">Education</h2>
+        <ul class="slide-in-left">
+            <li>University: B. Tech Electrical & Computer Engineering, MIT-WPU, Pune - 2022-26</li>
+            <li>Junior College: RIMS International School & Jr. College, Pune - 2019-21</li>
+            <li>School: S M Batha High School, Panchgani - 2019</li>
+        </ul>
+    </section>
+    
+    <section id="skills" class="skills">
+        <h2 class="slide-in-left">Skills</h2>
+        <div class="skills-container slide-in-right">
+           <ul>
+	    <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+	  </ul>
+	<ul class="slide-in-right">
+            <li>Embedded Systems</li>
+            <li>MATLAB</li>
+	    <li>RoboAnalyzer</li>
+	    <li>RoboDK</li>
+	    <li>Simulink</li>
+	  </ul>
+	<ul class="slide-in-right">
+	    <li>Python</li>
+	    <li>CSS</li>
+	    <li>AutoCAD</li>
+	    <li>MySQL</li>
+	    <li>DBMS</li>
+	</ul>
+      </div>
+    </section>
+    
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-container fade-in">
+            <div class="project-text fade-in">
+                <h3>Advanced Automated Parking Lot Management System</h3>
+                <p>This project presents the design and development of an Automated Parking Lot Management 
+System that optimizes vehicle parking in limited spaces using embedded technology. The 
+system is built on an ESP32 microcontroller platform and incorporates servo motors, infrared 
+(IR) sensors, and an OLED display. The primary objective of this project is to create a user
+friendly interface for managing parking slots, where users can add, search, and remove 
+vehicles with ease. <br> <br>
+ 
+The system includes four parking slots and separate entry and exit barriers, each operated by 
+servo motors. Upon selecting an operation, users are prompted to input a car number, and the 
+system processes the input to either allocate or release a parking slot. Entry and exit barriers 
+open and close automatically through IR proximity sensors, minimizing manual intervention. 
+The OLED display provides real-time updates on parking availability, displaying messages 
+such as "Welcome, project by Saad & Prasiddha" or "Parking is full." When a slot becomes 
+available, the system automatically reverts to the welcome message.<br> <br>
+ 
+The project demonstrates effective use of IoT components to automate parking management, 
+offering a scalable solution for real-world applications where space efficiency and 
+automation are critical. This system is designed to improve user convenience, reduce traffic 
+congestion within parking areas, and promote efficient space utilization.</p>
+            </div>
+            <img src="MinorProjectPhoto1.jpg" alt="Project 1" class="fade-in">
+        </div>
+        <div class="project-container fade-in">
+            <div class="project-text fade-in">
+                <h3>Stats Based Football Scouting</h3>
+                <p>In this project, a comprehensive database system has been developed to facilitate football 
+scouting by capturing key player statistics from various sources. Using MySQL, this system 
+organizes and stores data in different tables, each focused on a specific aspect of player 
+performance. The data is then analyzed and visualized to support informed decision-making in 
+scouting. The system enables the application of multiple filters and criteria to assess player 
+suitability for different playing styles, offering a powerful tool for teams and analysts to 
+identify the most suitable players for their specific tactical needs. <br> <br>
+The project leverages Python and MySQL for database management and data manipulation, 
+with additional tools such as Pandas for data processing and Tkinter for building a graphical 
+user interface (GUI). By inputting player data from CSV files, the system organizes the 
+information in various relational tables, including match statistics, shot efficiency, passing 
+stats, defensive stats, and more. Through this interface, users can dynamically filter players 
+based on specific performance criteria, such as passing accuracy, tackling, dribbling success, 
+and aerial duels won, which can then guide the selection process for football teams. <br> <br>
+In summary, this project aims to enhance the scouting process by automating the extraction 
+and analysis of player statistics, providing valuable insights to teams and scouts looking for 
+players who fit particular roles or playing styles. By leveraging a comprehensive database 
+system and data visualization techniques, this project offers a modern approach to football 
+scouting, shifting the focus from traditional subjective evaluations to data-driven decision
+making.</p>
+            </div>
+            <img src="SBF.jpg" alt="Project 2" class="fade-in">
+        </div>
+    </section>
+    
+    <section id="activities" class="activities">
+        <h2>Extra-Curricular Activities</h2>
+        <p>Sports Secretary, Department of Electrical & Electronics Engineering, MIT-WPU.</p>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="contact-btn">Send</button>
+        </form>
+    </section>
+</body>
+</html>

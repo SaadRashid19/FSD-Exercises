@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #222;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.big-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 4px solid #222;
+}
+
+/* Sections */
+section {
+    padding: 50px 5%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Project Section */
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+    min-height: 200px;
+}
+
+.project-text {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.project-container img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-btn {
+    padding: 10px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #ffcc00;
+    color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    .big-text {
+        font-size: 2.5rem;
+    }
+
+    .project-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-text, .project-container img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* Initial hidden state */
+.slide-in-left, .slide-in-right {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+/* Slide in from left */
+.slide-in-left {
+    transform: translateX(-100px);
+}
+
+/* Slide in from right */
+.slide-in-right {
+    transform: translateX(100px);
+}
+
+/* Make elements visible when they appear */
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between columns */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.skills-container ul {
+    list-style: none;
+    padding: 0;
+    flex: 1; /* Ensures even spacing */
+    min-width: 150px; /* Prevents items from squishing */
+}
+
+.skills-container li {
+    background: #222;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+
+
